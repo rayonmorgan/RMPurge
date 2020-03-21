@@ -55,6 +55,8 @@ namespace RMPurge
                 lsbDriveName.Items.Clear();                
             }
 
+            //add heading to list box which displays available drives
+            lsbDriveName.Items.Add(new TextBlock().Text="Drive List");
             foreach (var iEListDrives in lDrives)
             {
                 //add each drive name to the listBox
